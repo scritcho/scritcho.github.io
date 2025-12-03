@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mehdi Ben Feidia - Cybersecurity Specialist</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="matrix-canvas"></canvas>
+
+    <div class="content-wrapper">
+        <nav>
+            <div class="container">
+                <div class="logo"><span>[</span> MBF <span>]</span></div>
+                <ul>
+                    <li><a href="#home">Accueil</a></li>
+                    <li><a href="#about">À Propos</a></li>
+                    <li><a href="#experience">Expérience</a></li>
+                    <li><a href="#skills">Compétences</a></li>
+                    <li><a href="#projects">Projets</a></li>
+                    <li><a href="#cv">CV</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <section id="home" class="hero">
+            <div class="hero-content">
+                <!-- PUT YOUR IMAGE HERE: Replace 'profile.jpg' with your actual image filename -->
+                <div class="profile-pic-container">
+                    <img src="profile.jpg" alt="Mehdi Ben Feidia" class="profile-pic">
+                </div>
+                
+                <h1 class="glitch">MEHDI BEN FEIDIA</h1>
+                <p class="terminal-text">
+                    <span class="typing-effect">Spécialiste en Cybersécurité & Ethical Hacker</span>
+                </p>
+                
+                <div class="social-links">
+                    <a href="https://linkedin.com/in/mehdi-ben-faidia" target="_blank" class="social-icon" title="LinkedIn">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="currentColor" d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14m-.5 15.5v-5.3a3.26 3.26 0 0 0-3.26-3.26c-.85 0-1.84.52-2.32 1.3v-1.11h-2.79v8.37h2.79v-4.93c0-.77.62-1.4 1.39-1.4a1.4 1.4 0 0 1 1.4 1.4v4.93h2.79M6.88 8.56a1.68 1.68 0 0 0 1.68-1.68c0-.93-.75-1.69-1.68-1.69a1.69 1.69 0 0 0-1.69 1.69c0 .93.76 1.68 1.69 1.68m1.39 9.94v-8.37H5.5v8.37h2.77z"/>
+                        </svg>
+                    </a>
+                    <a href="https://github.com/scritcho" target="_blank" class="social-icon" title="GitHub">
+                        <svg viewBox="0 0 24 24" width="32" height="32">
+                            <path fill="currentColor" d="M12 2A10 10 0 0 0 2 12c0 4.42 2.87 8.17 6.84 9.5.5.08.66-.23.66-.5v-1.69c-2.77.6-3.36-1.34-3.36-1.34-.46-1.16-1.11-1.47-1.11-1.47-.91-.62.07-.6.07-.6 1 .07 1.53 1.03 1.53 1.03.87 1.52 2.34 1.07 2.91.83.09-.65.35-1.09.63-1.34-2.22-.25-4.55-1.11-4.55-4.92 0-1.11.38-2 1.03-2.71-.1-.25-.45-1.29.1-2.64 0 0 .84-.27 2.75 1.02.79-.22 1.65-.33 2.5-.33.85 0 1.71.11 2.5.33 1.91-1.29 2.75-1.02 2.75-1.02.55 1.35.2 2.39.1 2.64.65.71 1.03 1.6 1.03 2.71 0 3.82-2.34 4.66-4.57 4.91.36.31.69.92.69 1.85V21c0 .27.16.59.67.5C19.14 20.16 22 16.42 22 12A10 10 0 0 0 12 2z"/>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-box">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">CTF Challenges Créés</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">100%</div>
+                        <div class="stat-label">Passion Sécurité</div>
+                    </div>
+                    <div class="stat-box">
+                        <div class="stat-number">CEH</div>
+                        <div class="stat-label">Certifié</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <h2 class="section-title">À Propos</h2>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                    <span class="terminal-title">root@mehdi:~</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">root@mehdi:~$</span> cat README.txt</p>
+                    <div class="terminal-output">
+                        <p>========================================</p>
+                        <p>     MEHDI BEN FEIDIA - README.txt</p>
+                        <p>========================================</p>
+                        <p></p>
+                        <p><span class="highlight">[PROFILE]</span></p>
+                        <p>Étudiant passionné en cybersécurité à ISITcom Hammem Sousse,</p>
+                        <p>spécialisé en ethical hacking et sécurité offensive.</p>
+                        <p>Membre actif de Securinets, créateur de challenges CTF,</p>
+                        <p>et contributeur dans la communauté cybersécurité tunisienne.</p>
+                        <p></p>
+                        <p><span class="highlight">[EXPERTISE]</span></p>
+                        <p>• Pentest & Vulnerability Assessment (OWASP Top 10)</p>
+                        <p>• Création de Challenges CTF complexes</p>
+                        <p>• Analyse forensic et réponse à incidents</p>
+                        <p>• Sécurisation infrastructure réseau</p>
+                        <p></p>
+                        <p><span class="highlight">[MISSION]</span></p>
+                        <p>Protéger les systèmes et sensibiliser à la sécurité</p>
+                        <p>informatique par l'apprentissage pratique et l'innovation.</p>
+                        <p></p>
+                        <p>========================================</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience">
+            <h2 class="section-title">Parcours Professionnel</h2>
+            
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Sep. 2023 – Juin 2026</div>
+                        <h3 class="timeline-title">Licence en Ingénierie des Systèmes Informatiques</h3>
+                        <div class="timeline-subtitle">ISITcom Hammem Sousse</div>
+                        <p class="timeline-description">
+                            Formation approfondie en cybersécurité, développement sécurisé, et administration systèmes et réseaux.
+                        </p>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-content">
+                        <div class="timeline-date">Juillet 2025 – Août 2025</div>
+                        <h3 class="timeline-title">Stagiaire en Sécurité Informatique</h3>
+                        <div class="timeline-subtitle">Agence Nationale de la Cybersécurité - Tunis</div>
+                        <div class="timeline-description">
+                            • Analyse de vulnérabilités sur applications web (OWASP)<br>
+                            • Réponse à incidents et analyse de logs suspects<br>
+                            • Rédaction de rapports techniques de sécurité
+                        </div>
+                    </div>
+                    <div class="timeline-dot"></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills">
+            <h2 class="section-title">Compétences Techniques</h2>
+            
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <span class="terminal-button red"></span>
+                    <span class="terminal-button yellow"></span>
+                    <span class="terminal-button green"></span>
+                    <span class="terminal-title">root@mehdi:~/skills</span>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-line"><span class="prompt">root@mehdi:~/skills$</span> ls -la</p>
+                    <div class="terminal-output skills-list">
+                        <p>total 48</p>
+                        <p>drwxr-xr-x  6 root root 4096 Dec  4 2024 <span class="dir">.</span></p>
+                        <p>drwxr-xr-x  3 root root 4096 Dec  4 2024 <span class="dir">..</span></p>
+                        <p></p>
+                        <p>drwxr-xr-x  2 root root 4096 Dec  4 2024 <span class="dir">security/</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">cybersecurity.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">ethical-hacking.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">forensic.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">pentest.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">wireshark.sh</span></p>
+                        <p></p>
+                        <p>drwxr-xr-x  2 root root 4096 Dec  4 2024 <span class="dir">network/</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">tcp-ip.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">vlan.sh</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">firewall.sh</span></p>
+                        <p></p>
+                        <p>drwxr-xr-x  2 root root 4096 Dec  4 2024 <span class="dir">languages/</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">python.py</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">java.jar</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">c-program.c</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">sql-queries.sql</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">script.js</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">script.sh</span></p>
+                        <p></p>
+                        <p>drwxr-xr-x  2 root root 4096 Dec  4 2024 <span class="dir">tools/</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">metasploit</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">burp-suite</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">nmap</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">kali-linux</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">docker</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">kubernetes</span></p>
+                        <p class="indent">-rwxr-xr-x  1 root root  512 Dec  4 2024 <span class="file">git</span></p>
+                        <p></p>
+                        <p>drwxr-xr-x  2 root root 4096 Dec  4 2024 <span class="dir">certifications/</span></p>
+                        <p class="indent">-rw-r--r--  1 root root  512 Dec  4 2024 <span class="cert">cisco-ceh.cert</span></p>
+                        <p class="indent">-rw-r--r--  1 root root  512 Dec  4 2024 <span class="cert">ctf-player.badge</span></p>
+                        <p class="indent">-rw-r--r--  1 root root  512 Dec  4 2024 <span class="cert">ctf-creator.badge</span></p>
+                        <p class="indent">-rw-r--r--  1 root root  512 Dec  4 2024 <span class="cert">securinets-member.badge</span></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects">
+            <h2 class="section-title">Projets de Sécurité</h2>
+            
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🚩</div>
+                        <h3 class="project-title">Création de Challenges CTF</h3>
+                        <p class="project-period">2025 – Présent</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Conception et développement de challenges Capture The Flag pour événements nationaux et locaux de cybersécurité. Création de scénarios réalistes avec vulnérabilités customisées (injection SQL, SSTI, Cluster misconfiguration).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Python</span>
+                            <span class="tech-badge">Flask</span>
+                            <span class="tech-badge">Docker</span>
+                            <span class="tech-badge">Kubernetes</span>
+                            <span class="tech-badge">OWASP</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🌐</div>
+                        <h3 class="project-title">Laboratoire Sécurité Réseau</h3>
+                        <p class="project-period">2024 – 2025</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Configuration et sécurisation de réseaux virtuels complexes avec pare-feu, VLANs et politiques d'accès. Analyse de trames réseau pour identifier activités suspectes. Expérimentation avec protocoles de sécurité (IPSec, SSL/TLS).
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Cisco Packet Tracer</span>
+                            <span class="tech-badge">Wireshark</span>
+                            <span class="tech-badge">IPSec</span>
+                            <span class="tech-badge">SSL/TLS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-header">
+                        <div class="project-icon">🔍</div>
+                        <h3 class="project-title">Pentest & Vulnerability Assessment</h3>
+                        <p class="project-period">Projets Continue</p>
+                    </div>
+                    <div class="project-body">
+                        <p class="project-description">
+                            Application de méthodologies structurées OWASP pour identifier et exploiter des vulnérabilités dans environnements contrôlés. Tests d'intrusion sur applications web et infrastructure réseau.
+                        </p>
+                        <div class="project-tech">
+                            <span class="tech-badge">Metasploit</span>
+                            <span class="tech-badge">Burp Suite</span>
+                            <span class="tech-badge">Nmap</span>
+                            <span class="tech-badge">OWASP</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv">
+            <h2 class="section-title">Curriculum Vitae</h2>
+            
+            <div class="cv-container">
+                <div class="cv-card">
+                    <div class="cv-icon">📄</div>
+                    <h3>CV PDF</h3>
+                    <p>Téléchargez mon CV complet au format PDF</p>
+                    <!-- PUT YOUR PDF CV HERE: Replace 'cv.pdf' with your actual CV filename -->
+                    <a href="cv.pdf" download class="cv-button">
+                        <span>Télécharger CV</span>
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none">
+                            <path d="M12 15V3m0 12l-4-4m4 4l4-4M2 17l.621 2.485A2 2 0 004.561 21h14.878a2 2 0 001.94-1.515L22 17" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                        </svg>
+                    </a>
+                </div>
+
+                <div class="cv-card">
+                    <div class="cv-icon">🎥</div>
+                    <h3>CV Vidéo</h3>
+                    <p>Découvrez mon parcours en vidéo</p>
+                    <div class="video-container">
+                        <!-- PUT YOUR VIDEO HERE: Replace 'cv-video.mp4' with your actual video filename -->
+                        <!-- You can also use YouTube/Vimeo embed: -->
+                        <!-- <iframe src="YOUR_YOUTUBE_EMBED_URL" frameborder="0" allowfullscreen></iframe> -->
+                        <video controls>
+                            <source src="cv-video.mp4" type="video/mp4">
+                            Votre navigateur ne supporte pas la lecture de vidéos.
+                        </video>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <h2 class="section-title">Établir une Connexion</h2>
+            
+            <div class="contact-grid">
+                <div class="contact-item" onclick="window.location.href='tel:+21650454106'">
+                    <div class="contact-icon">📞</div>
+                    <div class="contact-label">Téléphone</div>
+                    <div class="contact-value">+216 50 454 106</div>
+                </div>
+
+                <div class="contact-item" onclick="window.location.href='mailto:mehdibenfaidia@gmail.com'">
+                    <div class="contact-icon">📧</div>
+                    <div class="contact-label">Email</div>
+                    <div class="contact-value">mehdibenfaidia@gmail.com</div>
+                </div>
+
+                <div class="contact-item" onclick="window.open('https://www.linkedin.com/in/mehdi-ben-faidia-71028b295/', '_blank')">
+                    <div class="contact-icon">💼</div>
+                    <div class="contact-label">LinkedIn</div>
+                    <div class="contact-value">mehdi-ben-faidia</div>
+                </div>
+
+                <div class="contact-item" onclick="window.open('https://github.com/scritcho', '_blank')">
+                    <div class="contact-icon">💻</div>
+                    <div class="contact-label">GitHub</div>
+                    <div class="contact-value">scritcho</div>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <p>[ root@mehdi-benfeidia:~# ] © 2025 - Tous droits réservés </p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
