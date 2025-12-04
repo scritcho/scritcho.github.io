@@ -163,3 +163,111 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// Gallery Functionality for Events
+const galleries = [
+    { current: 0, total: 5 }, // Redroom (5 images)
+    { current: 0, total: 4 }, // Raksha (4 images)
+    { current: 0, total: 2 }, // Green Health (2 images)
+    { current: 0, total: 2 }  // ISET Zaghouan (2 images)
+];
+
+// Initialize galleries
+function initGalleries() {
+    galleries.forEach((gallery, index) => {
+        createDots(index, gallery.total);
+        updateDots(index);
+    });
+}
+
+// Create dots for gallery navigation
+function createDots(galleryIndex, total) {
+    const dotsContainer = document.getElementById(`dots-${galleryIndex}`);
+    if (!dotsContainer) return;
+    
+    for (let i = 0; i < total; i++) {
+        const dot = document.createElement('span');
+        dot.className = 'dot';
+        if (i === 0) dot.classList.add('active');
+        dot.onclick = () => goToSlide(galleryIndex, i);
+        dotsContainer.appendChild(dot);
+    }
+}
+
+// Change slide
+function changeSlide(galleryIndex, direction) {
+    const gallery = galleries[galleryIndex];
+    gallery.current += direction;
+    
+    if (gallery.current >= gallery.total) {
+        gallery.current = 0;
+    } else if (gallery.current < 0) {
+        gallery.current = gallery.total - 1;
+    }
+    
+    updateGallery(galleryIndex);
+}
+
+// Go to specific slide
+function goToSlide(galleryIndex, slideIndex) {
+    galleries[galleryIndex].current = slideIndex;
+    updateGallery(galleryIndex);
+}
+
+// Update gallery display
+function updateGallery(galleryIndex) {
+    const images = document.querySelectorAll(`[data-gallery="${galleryIndex}"]`);
+    images.forEach((img, index) => {
+        img.classList.remove('active');
+        if (index === galleries[galleryIndex].current) {
+            img.classList.add('active');
+        }
+    });
+    updateDots(galleryIndex);
+}
+
+// Update dots
+function updateDots(galleryIndex) {
+    const dotsContainer = document.getElementById(`dots-${galleryIndex}`);
+    if (!dotsContainer) return;
+    
+    const dots = dotsContainer.querySelectorAll('.dot');
+    dots.forEach((dot, index) => {
+        dot.classList.remove('active');
+        if (index === galleries[galleryIndex].current) {
+            dot.classList.add('active');
+        }
+    });
+}
+
+// Initialize galleries when page loads
+window.addEventListener('load', initGalleries);
+
+// Touch/Swipe support for mobile
+let touchStartX = 0;
+let touchEndX = 0;
+
+document.querySelectorAll('.gallery-container').forEach((container, index) => {
+    container.addEventListener('touchstart', e => {
+        touchStartX = e.changedTouches[0].screenX;
+    });
+
+    container.addEventListener('touchend', e => {
+        touchEndX = e.changedTouches[0].screenX;
+        handleSwipe(index);
+    });
+});
+
+function handleSwipe(galleryIndex) {
+    if (touchEndX < touchStartX - 50) {
+        // Swipe left
+        changeSlide(galleryIndex, 1);
+    }
+    if (touchEndX > touchStartX + 50) {
+        // Swipe right
+        changeSlide(galleryIndex, -1);
+    }
+}
+
+// Make changeSlide available globally
+window.changeSlide = changeSlide;
